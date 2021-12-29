@@ -8,9 +8,9 @@ namespace TestCode.TestAbstract
     {
         private string Address { get; set; }
 
+        [Action("")]
         public override void Run()
         {
-            this.Begin();
             string str = this.strData;
             int number = this.intData;
 
@@ -24,7 +24,6 @@ namespace TestCode.TestAbstract
             Console.WriteLine("strData = " + strData + " str = " + str);
             Console.WriteLine("intData = " + intData + " number = " + number);
             Console.WriteLine("Address = " + Address + " strAddress = " + strAddress);
-            this.End();
         }
     }
 }
