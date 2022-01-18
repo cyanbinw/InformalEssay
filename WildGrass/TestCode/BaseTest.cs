@@ -18,6 +18,7 @@ namespace TestCode
 
         protected virtual void Begin()
         {
+            Console.Clear();
             Console.WriteLine();
             Console.WriteLine("----------------------- " + this.ToString() + " Begin -----------------------");
         }
