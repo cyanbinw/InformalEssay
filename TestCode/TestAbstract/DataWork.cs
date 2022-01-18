@@ -4,11 +4,10 @@ using System.Text;
 
 namespace TestCode.TestAbstract
 {
-    public class DataModel : DataAbstract
+    public class DataWork : DataAbstract
     {
         private string Address { get; set; }
 
-        [Action("")]
         public override void Run()
         {
             string str = this.strData;

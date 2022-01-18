@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace TestCode
 {
-    [AttributeUsage(AttributeTargets.Method, AllowMultiple=true,Inherited=false)]
+    [AttributeUsage(AttributeTargets.All, AllowMultiple=true,Inherited=false)]
     public class ActionAttribute : Attribute
     {
-        public ActionAttribute(string name)
+        public bool Action { get; set; }
+        public string Describe { get; set; }
+        public string Version { get; set; }
+
+        public ActionAttribute(bool action, string descruibe, string version)
         {
-            Console.WriteLine("----------------------- " + this.ToString() + " Begin -----------------------");
+            this.Action = action;
+            this.Describe = descruibe;
+            this.Version = version;
         }
     }
 }

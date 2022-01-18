@@ -16,10 +16,10 @@ Console.ReadKey();
 
 static void test()
 {
-    ITest data = new DataModel();
+    ITest data = new DataWork();
     data.Run();
 
-    ITest dataAbstract = new DataModel();
+    ITest dataAbstract = new DataWork();
     dataAbstract.Run();
 
     Console.WriteLine("----------------------------------------------");
