@@ -6,9 +6,9 @@ namespace TestCode.TestDelegation
 {
     public delegate void Work();
     public delegate int ActionWork(int i, int y);
-    public class DelegateWork : ITest
+    public class DelegateWork : BaseTest
     {
-        public void Run()
+        public override void Run()
         {
             Action();
         }

@@ -5,12 +5,12 @@ using System.Text;
 
 namespace TestCode.TestCopy
 {
-    public class Copy: ITest
+    public class Copy: BaseTest
     {
         public CopyModel Copy1 { get; set; }
         public CopyModel Copy2 { get; set; }
 
-        public void Run()
+        public override void Run()
         {
             Copy1 = new CopyModel();
             Copy1.Name = "Data";

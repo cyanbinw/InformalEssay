@@ -16,49 +16,30 @@ Console.ReadKey();
 
 static void test()
 {
-    ITest data = new DataWork();
-    data.Run();
+    BaseTest data = new DataWork();
+    data.Action();
 
-    ITest dataAbstract = new DataWork();
-    dataAbstract.Run();
+    BaseTest dataAbstract = new DataWork();
+    dataAbstract.Action();
 
-    Console.WriteLine("----------------------------------------------");
+    BaseTest copy = new Copy();
+    copy.Action();
 
-    ITest copy = new Copy();
-    copy.Run();
+    BaseTest list = new WorkList();
+    list.Action();
 
-    Console.WriteLine("----------------------------------------------");
+    BaseTest dependency = new DependencyInjection();
+    dependency.Action();
 
-    ITest list = new List();
-    list.Run();
+    BaseTest run = new RunTest();
+    run.Action();
 
-    Console.WriteLine("----------------------------------------------");
+    BaseTest threaded = new Threaded();
+    threaded.Action();
 
-    ITest dependency = new DependencyInjection();
-    dependency.Run();
+    BaseTest delegates = new DelegateWork();
+    delegates.Action();
 
-    Console.WriteLine("----------------------------------------------");
-
-    var date = DateTime.Now;
-    Console.WriteLine(date.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
-
-    Console.WriteLine("----------------------------------------------");
-
-    ITest run = new RunTest();
-    run.Run();
-
-    Console.WriteLine("----------------------------------------------");
-
-    ITest threaded = new Threaded();
-    threaded.Run();
-
-    Console.WriteLine("----------------------------------------------");
-
-    ITest delegates = new DelegateWork();
-    delegates.Run();
-
-    Console.WriteLine("----------------------------------------------");
-
-    ITest property = new PropertyWork();
-    property.Run();
+    BaseTest property = new PropertyWork();
+    property.Action();
 }

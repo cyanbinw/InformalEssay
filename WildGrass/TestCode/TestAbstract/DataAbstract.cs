@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TestCode.TestAbstract
 {
-    public abstract class DataAbstract : BaseTest, ITest
+    public abstract class DataAbstract : BaseTest
     {
         public string Name { get; set; }
 
@@ -14,6 +14,5 @@ namespace TestCode.TestAbstract
 
         public int intData = 12;
 
-        public abstract void Run();
     }
 }

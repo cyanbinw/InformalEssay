@@ -4,9 +4,9 @@ using System.Text;
 
 namespace TestCode.TestProperty
 {
-    public class PropertyWork : ITest
+    public class PropertyWork : BaseTest
     {
-        public void Run()
+        public override void Run()
         {
             PropertyModel model = new PropertyModel();
             string str = model.PropertyStr;

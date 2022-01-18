@@ -5,11 +5,11 @@ using System.Text;
 
 namespace TestCode.TestDependencyInjection
 {
-    public class DependencyInjection:ITest
+    public class DependencyInjection : BaseTest
     {
         public IContainer Container { get; set; }
 
-        public void Run()
+        public override void Run()
         {
             ContainerBuilder builder = new ContainerBuilder();
             builder.RegisterType<NoYellowBook>().As<IWrite>();
@@ -28,6 +28,14 @@ namespace TestCode.TestDependencyInjection
             read.Name = "ppp";
             read.Read();
             
+        }
+
+        public void Date()
+        {
+            var date = DateTime.Now;
+            Console.WriteLine(date.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffZ"));
+
+            Console.WriteLine("----------------------------------------------");
         }
     }
 }

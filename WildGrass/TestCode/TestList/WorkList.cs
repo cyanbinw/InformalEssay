@@ -7,12 +7,12 @@ using System.Text;
 
 namespace TestCode.TestList
 {
-    public class List: ITest
+    public class WorkList: BaseTest
     {
-        public void Run()
+        public override void Run()
         {
-            ListModel list = new ListModel();
-            ListModel item = new ListModel();
+            ListItems list = new ListItems();
+            ListItems item = new ListItems();
             List<Data> d = new List<Data>();
             int[] n = new int[10];
             ArrayList array = new ArrayList();
@@ -40,8 +40,8 @@ namespace TestCode.TestList
         public void DifferenceSet()
         {
             Console.WriteLine("----------------------------------------------");
-            ListModel item1 = new ListModel();
-            ListModel item2 = new ListModel();
+            ListItems item1 = new ListItems();
+            ListItems item2 = new ListItems();
             List<Data> data = new List<Data>();
             for (var i = 0; i < 10; i++)
             {

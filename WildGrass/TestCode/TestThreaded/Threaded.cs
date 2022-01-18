@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestCode.TestThreaded
 {
-    public class Threaded : BaseTest, ITest
+    public class Threaded : BaseTest
     {
-        public void Run()
+        public override void Run()
         {
             //for (var i =0; i < 10; i++)
             //{             

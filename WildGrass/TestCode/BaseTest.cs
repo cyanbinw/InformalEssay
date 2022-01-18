@@ -6,17 +6,30 @@ using System.Threading.Tasks;
 
 namespace TestCode
 {
-    public class BaseTest
+    public class BaseTest: ITest
     {
-        public virtual void Begin()
+
+        public void Action()
+        {
+            Begin();
+            Run();
+            End();
+        }
+
+        protected virtual void Begin()
         {
             Console.WriteLine();
             Console.WriteLine("----------------------- " + this.ToString() + " Begin -----------------------");
         }
 
-        public virtual void End()
+        protected virtual void End()
         {
             Console.WriteLine("----------------------- " + this.ToString() + " End -----------------------");
+        }
+
+        public virtual void Run()
+        {
+
         }
     }
 }

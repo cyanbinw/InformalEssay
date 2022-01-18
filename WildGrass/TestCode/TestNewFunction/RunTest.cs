@@ -4,10 +4,10 @@ using System.Text;
 
 namespace TestCode.TestNewFunction
 {
-    public class RunTest: ITest
+    public class RunTest: BaseTest
     {
 
-        public void Run()
+        public override void Run()
         {
             tuple();
         }
