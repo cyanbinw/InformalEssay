@@ -8,13 +8,19 @@ namespace TestCode.TestThreaded
 {
     public class Threaded : BaseTest
     {
-        public override void Run()
+        public override async void Run()
         {
-            //for (var i =0; i < 10; i++)
-            //{             
-            //    Console.WriteLine(TaskAction(i).Result);
+            //for (var i = 0; i < 10; i++)
+            //{
+            //    await TaskAction(i);
             //}
+
+            string value = await TaskAction(1);
+            Console.WriteLine(value);
+
+            Console.WriteLine("start TaskVoid");
             TaskVoid();
+            Console.WriteLine("complete Run");
         }
 
         public async Task<string> TaskAction(int id)
