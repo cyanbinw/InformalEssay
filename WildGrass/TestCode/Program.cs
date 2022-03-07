@@ -6,6 +6,7 @@ using TestCode.TestCopy;
 using TestCode.TestDelegation;
 using TestCode.TestDependencyInjection;
 using TestCode.TestList;
+using TestCode.TestMongodb;
 using TestCode.TestNewFunction;
 using TestCode.TestProperty;
 using TestCode.TestThreaded;
@@ -16,30 +17,33 @@ Console.ReadKey();
 
 static void test()
 {
-    BaseTest data = new DataWork();
-    data.Action();
+    //BaseTest data = new DataWork();
+    //data.Action();
 
-    BaseTest dataAbstract = new DataWork();
-    dataAbstract.Action();
+    //BaseTest dataAbstract = new DataWork();
+    //dataAbstract.Action();
 
-    BaseTest copy = new Copy();
-    copy.Action();
+    //BaseTest copy = new Copy();
+    //copy.Action();
 
-    BaseTest list = new WorkList();
-    list.Action();
+    //BaseTest list = new WorkList();
+    //list.Action();
 
-    BaseTest dependency = new DependencyInjection();
-    dependency.Action();
+    //BaseTest dependency = new DependencyInjection();
+    //dependency.Action();
 
-    BaseTest run = new RunTest();
-    run.Action();
+    //BaseTest run = new RunTest();
+    //run.Action();
 
-    BaseTest threaded = new Threaded();
-    threaded.Action();
+    //BaseTest threaded = new Threaded();
+    //threaded.Action();
 
-    BaseTest delegates = new DelegateWork();
-    delegates.Action();
+    //BaseTest delegates = new DelegateWork();
+    //delegates.Action();
 
-    BaseTest property = new PropertyWork();
-    property.Action();
+    //BaseTest property = new PropertyWork();
+    //property.Action();
+
+    BaseTest mongo = new MongoWork();
+    mongo.Action();
 }
