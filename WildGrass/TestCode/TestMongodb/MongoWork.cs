@@ -13,7 +13,7 @@ namespace TestCode.TestMongodb
         /// <summary>
         /// 数据库连接
         /// </summary>
-        private const string conn = "mongodb://admin:123456@192.168.2.213:27017";
+        private const string conn = "mongodb://admin:123456@192.168.2.188:27017";
         /// <summary>
         /// 指定的数据库
         /// </summary>

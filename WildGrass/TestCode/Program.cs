@@ -35,8 +35,8 @@ static void test()
     //BaseTest run = new RunTest();
     //run.Action();
 
-    //BaseTest threaded = new Threaded();
-    //threaded.Action();
+    BaseTest threaded = new Threaded();
+    threaded.Action();
 
     //BaseTest delegates = new DelegateWork();
     //delegates.Action();
