@@ -11,6 +11,7 @@ using TestCode.TestNewFunction;
 using TestCode.TestProperty;
 using TestCode.TestRedis;
 using TestCode.TestThreaded;
+using TestCode.TestTreeNode;
 
 test();
 Console.WriteLine("------------------Test Complete---------------");
@@ -36,8 +37,8 @@ static void test()
     //BaseTest run = new RunTest();
     //run.Action();
 
-    BaseTest threaded = new Threaded();
-    threaded.Action();
+    //BaseTest threaded = new Threaded();
+    //threaded.Action();
 
     //BaseTest delegates = new DelegateWork();
     //delegates.Action();
@@ -48,6 +49,15 @@ static void test()
     //BaseTest mongo = new MongoWork();
     //mongo.Action();
 
-    BaseTest redis = new RedisWork();
-    redis.Action();
+    //BaseTest redis = new RedisWork();
+    //redis.Action();
+
+    BaseTest treeNode = new TreeNodeWork();
+    treeNode.Action();
+
 }
+
+
+
+
+
