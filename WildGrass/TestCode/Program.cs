@@ -37,8 +37,8 @@ static void test()
     //BaseTest run = new RunTest();
     //run.Action();
 
-    //BaseTest threaded = new Threaded();
-    //threaded.Action();
+    BaseTest threaded = new Threaded();
+    threaded.Action();
 
     //BaseTest delegates = new DelegateWork();
     //delegates.Action();
@@ -52,8 +52,8 @@ static void test()
     //BaseTest redis = new RedisWork();
     //redis.Action();
 
-    BaseTest treeNode = new TreeNodeWork();
-    treeNode.Action();
+    //BaseTest treeNode = new TreeNodeWork();
+    //treeNode.Action();
 
 }
 
