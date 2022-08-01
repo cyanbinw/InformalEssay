@@ -20,19 +20,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+var test = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (test.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    test.UseSwagger();
+    test.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+test.UseHttpsRedirection();
 
-app.UseAuthorization();
+test.UseAuthorization();
 
-app.MapControllers();
+test.MapControllers();
 
-app.Run();
+test.Run();

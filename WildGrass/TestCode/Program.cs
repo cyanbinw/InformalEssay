@@ -6,6 +6,7 @@ using TestCode.TestCopy;
 using TestCode.TestDelegation;
 using TestCode.TestDependencyInjection;
 using TestCode.TestList;
+using TestCode.TestLock;
 using TestCode.TestMongodb;
 using TestCode.TestNewFunction;
 using TestCode.TestProperty;
@@ -37,8 +38,8 @@ static void test()
     //BaseTest run = new RunTest();
     //run.Action();
 
-    BaseTest threaded = new Threaded();
-    threaded.Action();
+    //BaseTest threaded = new Threaded();
+    //threaded.Action();
 
     //BaseTest delegates = new DelegateWork();
     //delegates.Action();
@@ -55,6 +56,8 @@ static void test()
     //BaseTest treeNode = new TreeNodeWork();
     //treeNode.Action();
 
+    BaseTest lockData = new WorkLock();
+    lockData.Action();
 }
 
 
