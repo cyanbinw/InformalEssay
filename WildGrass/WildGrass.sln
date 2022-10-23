@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCode", "TestCode\TestCode.csproj", "{1BE41B3C-125C-45F9-ADE6-E95AD7E92F43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCode", "TestCode\TestCode.csproj", "{1BE41B3C-125C-45F9-ADE6-E95AD7E92F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnFramework", "TestWeb\LearnFramework\LearnFramework.csproj", "{FFCCE8B4-4C22-46D9-BFC4-AED509DE0418}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1BE41B3C-125C-45F9-ADE6-E95AD7E92F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BE41B3C-125C-45F9-ADE6-E95AD7E92F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BE41B3C-125C-45F9-ADE6-E95AD7E92F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCCE8B4-4C22-46D9-BFC4-AED509DE0418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCCE8B4-4C22-46D9-BFC4-AED509DE0418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCCE8B4-4C22-46D9-BFC4-AED509DE0418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCCE8B4-4C22-46D9-BFC4-AED509DE0418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

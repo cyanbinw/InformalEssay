@@ -6,12 +6,14 @@ using TestCode.TestCopy;
 using TestCode.TestDelegation;
 using TestCode.TestDependencyInjection;
 using TestCode.TestList;
+using TestCode.TestLock;
 using TestCode.TestMongodb;
 using TestCode.TestNewFunction;
 using TestCode.TestProperty;
 using TestCode.TestReadOnly;
 using TestCode.TestRedis;
 using TestCode.TestThreaded;
+using TestCode.TestTreeNode;
 
 test();
 Console.WriteLine("------------------Test Complete---------------");
@@ -52,7 +54,20 @@ static void test()
     //BaseTest redis = new RedisWork();
     //redis.Action();
 
+    //BaseTest treeNode = new TreeNodeWork();
+    //treeNode.Action();
+
+    BaseTest lockData = new WorkLock();
+    lockData.Action();
+    //BaseTest redis = new RedisWork();
+    //redis.Action();
+
     BaseTest readOnly = new ReadOnlyWork();
     readOnly.Action();
 
 }
+
+
+
+
+

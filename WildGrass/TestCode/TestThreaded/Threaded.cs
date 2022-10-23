@@ -8,38 +8,39 @@ namespace TestCode.TestThreaded
 {
     public class Threaded : BaseTest
     {
-        public override async void Run()
+        public override void Run()
         {
-            //for (var i = 0; i < 10; i++)
-            //{
-            //    await TaskAction(i);
-            //}
-
-            string value = await TaskAction(1);
-            Console.WriteLine(value);
-
-            Console.WriteLine("start TaskVoid");
-            TaskVoid();
-            Console.WriteLine("complete Run");
+            Console.WriteLine("start Threaded");
+            Console.WriteLine("Current Process ID " + Thread.CurrentThread.ManagedThreadId);
+            TaskAction1();
+            
+            string test2 = "Test 2";
+            Task<int> value = TaskAction2(test2);
+            Console.WriteLine("Test 2 Process ID " + value.Result);
+            Console.WriteLine("complete Threaded");
         }
 
-        public async Task<string> TaskAction(int id)
+        public async void TaskAction1()
         {
-            string str = await Task.Run(() =>
+            await Task.Run(() =>
             {
-                Thread.Sleep(1000);
-                return "Task:";
+                Console.WriteLine("Test 1 Pending...");
+                Thread.Sleep(5000);
+                Console.WriteLine("Test 1 Task Process ID " + Thread.CurrentThread.ManagedThreadId);
+                Console.WriteLine("Test 1 Complete");
             });
-
-            str += id;
-            return str;
+            Console.WriteLine("Test 1 Process ID " + Thread.CurrentThread.ManagedThreadId);
         }
 
-        public async void TaskVoid()
+        public async Task<int> TaskAction2(string item)
         {
             await Task.Run(() => {
-                Console.WriteLine("Complete");
+                Console.WriteLine("Test 2 Pending...");
+                Thread.Sleep(3000);
+                Console.WriteLine(item);
+                Console.WriteLine("Task 2 Complete");
             });
+            return Thread.CurrentThread.ManagedThreadId;
         }
     }
 }
