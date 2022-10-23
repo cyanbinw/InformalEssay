@@ -9,6 +9,7 @@ using TestCode.TestList;
 using TestCode.TestMongodb;
 using TestCode.TestNewFunction;
 using TestCode.TestProperty;
+using TestCode.TestReadOnly;
 using TestCode.TestRedis;
 using TestCode.TestThreaded;
 
@@ -48,6 +49,10 @@ static void test()
     //BaseTest mongo = new MongoWork();
     //mongo.Action();
 
-    BaseTest redis = new RedisWork();
-    redis.Action();
+    //BaseTest redis = new RedisWork();
+    //redis.Action();
+
+    BaseTest readOnly = new ReadOnlyWork();
+    readOnly.Action();
+
 }
