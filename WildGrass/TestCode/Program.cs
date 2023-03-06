@@ -10,6 +10,7 @@ using TestCode.TestLock;
 using TestCode.TestMongodb;
 using TestCode.TestNewFunction;
 using TestCode.TestProperty;
+using TestCode.TestReadOnly;
 using TestCode.TestRedis;
 using TestCode.TestThreaded;
 using TestCode.TestTreeNode;
@@ -58,6 +59,12 @@ static void test()
 
     BaseTest lockData = new WorkLock();
     lockData.Action();
+    //BaseTest redis = new RedisWork();
+    //redis.Action();
+
+    BaseTest readOnly = new ReadOnlyWork();
+    readOnly.Action();
+
 }
 
 
