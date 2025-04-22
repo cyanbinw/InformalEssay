@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestCode
 {
-    internal interface ITest
+    public interface ITest
     {
         void Run();
     }

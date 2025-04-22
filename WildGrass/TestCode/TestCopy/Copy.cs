@@ -7,8 +7,8 @@ namespace TestCode.TestCopy
 {
     public class Copy: BaseTest
     {
-        public CopyModel Copy1 { get; set; }
-        public CopyModel Copy2 { get; set; }
+        public CopyModel Copy1 { get; set; } = new CopyModel();
+        public CopyModel Copy2 { get; set; } = new CopyModel();
 
         public override void Run()
         {
